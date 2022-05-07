@@ -1,0 +1,25 @@
+img {
+display:block;
+width: 400px;
+height: 262px;
+position:relative;
+margin:auto;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(47, 46, 49);
+}
+h1 {
+    color: rgb(224, 240, 255);
+    text-align: center;
+}
+p {
+    color: aliceblue;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+#idh {
+    text-align: center;
+    font-size:x-large;
+    font-style: bold;
+}

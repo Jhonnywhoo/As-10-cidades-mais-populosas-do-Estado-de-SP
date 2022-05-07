@@ -1,0 +1,294 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/* ------ my editions ------ */
+html::-webkit-scrollbar{
+    width: .6rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: rgb(255, 255, 255);
+    border-radius: 5rem;
+}
+body {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(https://spcity.com.br/wp-content/uploads/2017/01/sao-paulo.jpg);
+	background-color: #cccccc;
+	backdrop-filter: blur(2px);
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	background-color: rgb(95, 95, 118);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header-img {
+	height: 36px;
+}
+.logo {
+	margin: 12px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+.header-menu {
+    display: flex;
+	gap: 8px;
+}
+.header-menu-button {
+	background-color: rgb(227, 227, 238);
+	color: rgb(71, 79, 87);
+	font-size: 14px;
+	border: none;
+	padding: 24px;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.header-menu-button:hover {
+	background-color: rgb(184, 184, 201);
+}
+.content {
+	margin-top: 24px;
+	margin-left: 24px;
+	margin-right: 24px;
+}
+.introduction-title {
+	margin-right: 29%;
+	font-size: 48px;
+	color: aliceblue;
+	padding: 24px;
+	padding-bottom: 24px;
+}
+.introduction-perfil {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: aliceblue;
+	padding: 24px;
+	gap: 18px;
+	padding-top: 12px;
+}
+.introduction-perfil-img {
+	height: 36px;
+	border-radius: 64px;
+}
+.introduction-text {
+	color:aliceblue;
+	margin: 1rem 0;
+	padding: 24px;
+	margin-top: 0%;
+	margin-right: 40%;
+	font-size: 1.4rem;
+	margin-bottom: 32px;
+}
+.advise {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 24px;
+	background-color: aliceblue;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.advise-img {
+	width: 28px;
+	margin-right: 12px;
+}
+.advise-text{
+	color: rgb(38, 38, 38);
+	font-size: 18px;
+}
+.card-img {
+	width: 320px;
+	height: 192px;
+	margin: 24px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+}
+.card-sp-text {
+	font-size: 30px;
+	color: aliceblue;
+}
+.card-sp-title {
+	color: aliceblue;
+	font-size: 56px;
+	margin-bottom: 24px;
+}
+.card-sp-title-text {
+	color: aliceblue;
+	display: flex;
+	flex-direction: column;
+	padding: 24px;
+
+}
+.card {
+	padding-top: 64px;
+	padding-bottom: 64px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(https://spcity.com.br/wp-content/uploads/2017/01/sao-paulo.jpg);
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.card-gua {
+	padding-top: 64px;
+	padding-bottom: 64px;
+	flex-direction: row-reverse;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(https://upload.wikimedia.org/wikipedia/commons/2/2c/Vista_da_cidade_de_Guarulhos_%28SP%29.JPG);
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.card-cam {
+	padding-top: 64px;
+	padding-bottom: 64px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(https://www.livehere.com.br/blog/wp-content/uploads/2019/05/morar-em-campinas.jpg);
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.card-sbc {
+	padding-top: 64px;
+	padding-bottom: 64px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(https://upload.wikimedia.org/wikipedia/commons/e/ea/Vis%C3%A3o_Panor%C3%A2mica_de_S%C3%A3o_Bernardo_do_Campo.jpg);
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.card-sjc {
+	padding-top: 64px;
+	padding-bottom: 64px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(https://www.setpar.com.br/app/uploads/2019/01/sao-jose-dos-campos-carlos-nava-castillo.jpg);
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.card-sa {
+	padding-top: 64px;
+	padding-bottom: 64px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(https://upload.wikimedia.org/wikipedia/commons/8/8f/Pa%C3%A7o_Municipal_de_Santo_Andr%C3%A9_-_SP.jpg);
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.card-rp {
+	padding-top: 64px;
+	padding-bottom: 64px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(https://imagens.ebc.com.br/9SK9ntqMOi06BqgXSMjWwNfiDog=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/curiosidades-ribeirao-preto.jpg?itok=wU_dRozD);
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.card-osasco {
+	padding-top: 64px;
+	padding-bottom: 64px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(http://osasco.sp.gov.br/wp-content/uploads/2021/01/osasco.jpg);
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.card-sor {
+	padding-top: 64px;
+	padding-bottom: 64px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(https://upload.wikimedia.org/wikipedia/commons/3/32/Rio_Sorocaba_%28cropped%29.jpg);
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.card-maua {
+	padding-top: 64px;
+	padding-bottom: 64px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(https://upload.wikimedia.org/wikipedia/commons/0/0a/Mau%C3%A1_SP.jpg);
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.font {
+	color: aliceblue;
+	font-size: 24px;
+	margin: 24px;
+}
+
